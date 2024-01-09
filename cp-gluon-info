@@ -1,0 +1,7 @@
+#!/bin/sh    
+# gluon-info for older firmware <v2021
+echo " === Info === "                                                                                                                                             
+echo -n "  Gluon-release :  "                                                                                                                                          
+cat /lib/gluon/release                                                                                                                                            
+echo -n "  Hostname      :  "                                                                                                                                              
+uci get system.@system[0].hostname                                                                                                                                
