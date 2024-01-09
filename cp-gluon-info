@@ -4,4 +4,8 @@ echo " === Info === "
 echo -n "  Gluon-release :  "                                                                                                                                          
 cat /lib/gluon/release                                                                                                                                            
 echo -n "  Hostname      :  "                                                                                                                                              
-uci get system.@system[0].hostname                                                                                                                                
+uci get system.@system[0].hostname
+echo -n "  lat: "                                                                                                                                                 
+uci get gluon-node-info.@location[0].latitude                                                                                                                     
+echo -n "  lon: "                                                                                                                                                 
+uci get gluon-node-info.@location[0].longitude     
